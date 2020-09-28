@@ -10,7 +10,7 @@ public class RegexPinCode {
 		
 		Scanner sc=new Scanner(System.in);
 		
-		String match = "^[1-9][0-9]{5}";			//String pattern to be detected
+		String match = "^[1-9][0-9]{4}[0-9]$";			//String pattern to be detected
 
 		//Checking for matches
 		while(true) {
