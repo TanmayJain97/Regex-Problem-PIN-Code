@@ -10,14 +10,14 @@ public class RegexPinCode {
 		
 		Scanner sc=new Scanner(System.in);
 		
-		String match = "^[1-9][0-9]{4}[0-9]$";			//String pattern to be detected
+		String match = "[1-9]{1}[0-9]{2}(\\s)?[0-9]{3}";			//String pattern to be detected
 
 		//Checking for matches
 		while(true) {
 			
 			// String to be scanned to find the pattern.
 			System.out.print("Please enter PIN Code: ");
-			String line = sc.next();
+			String line = sc.nextLine();
 			
 			boolean check=line.matches(match);							//Condition check
 			if(check) {
